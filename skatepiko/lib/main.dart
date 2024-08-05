@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:skatepiko/page/pagina.dart';
+import 'package:skatepiko/presenter/pagina.dart';
 import 'package:go_router/go_router.dart';
 
 void main() {
-  final _router = GoRouter(
+  final router = GoRouter(
     routes: [
       GoRoute(
         path: '/page/pagina.dart',
@@ -13,7 +13,6 @@ void main() {
   );
   runApp(const MainApp());
 }
-
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
@@ -26,7 +25,7 @@ class MainApp extends StatelessWidget {
       },
       home: const HomePage(),
       debugShowCheckedModeBanner: false,
-      initialRoute: '/page/pagina.dart',
+      initialRoute: '/',
       );
   }
 }
